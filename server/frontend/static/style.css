@@ -4,13 +4,25 @@ img{
 }
 
 .card{
-  border: rgb(103, 102, 105) 3px solid;
+  border:#ffffff00;
   display: flex;  
   flex-direction: column;
   margin-left:5%;
   margin-right:5%;
   margin-top: 1%;
   margin-bottom: 1%;
+}
+
+.card-img-top{
+    background-color: rgb(189, 131, 243);
+    border-radius: 25%;
+    border:#FFF;
+    border-style: none;
+}
+
+.card-body{
+    background-color: rgb(189, 131, 243);
+    border:#FFF;
 }
 
 .row{
@@ -58,7 +70,8 @@ img{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex:1
+  flex:1;
+  border:#FFF;
 }
 
 .form_panel {
@@ -124,3 +137,39 @@ img{
     text-align:center;
     box-shadow: 2px 2px 3px #999;  
 }
+
+.contact_container {
+    display: flex;             /* keeps the two divs side by side */
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .contact_left {
+    width: 30%;
+  }
+
+  .contact_image-wrapper img {
+    display: block;
+    margin: 0 auto;            /* centers image horizontally */
+    max-width: 100%;
+    height: auto;
+  }
+
+  .contact_right {
+    width: 70%;
+    padding-left: 5px;
+    text-align: center;
+    display: flex;             /* enables flexbox */
+    flex-direction: column;    /* stack lines vertically */
+    justify-content: center;   /* vertically centers content inside the div */
+    height: 100%;              /* ensure it fills the height of .contact_container */
+  }
+
+  .contact_right p {
+    margin: 0; /* no left margin or any margin at all */
+  }
+
+  .bold {
+    font-weight: bold;
+  }
