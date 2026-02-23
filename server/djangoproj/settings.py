@@ -29,9 +29,11 @@ SECRET_KEY =\
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', 'http://0.0.0.0', 'http://127.0.0.1', 
-'https://jcgarrido27-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai']
+    'https://jcgarrido27-8000.theiadockernext-1-labs-prod-theiak8s\
+        -4-tor01.proxy.cognitiveclass.ai']
 CSRF_TRUSTED_ORIGINS = [
-'https://jcgarrido27-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai']
+    'https://jcgarrido27-8000.theiadockernext-1-labs-prod-theiak8s\
+        -4-tor01.proxy.cognitiveclass.ai']
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
@@ -145,4 +147,3 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'frontend/static'),
     os.path.join(BASE_DIR, 'frontend/build/static'),
 ]
-
