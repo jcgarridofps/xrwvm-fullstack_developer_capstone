@@ -23,7 +23,7 @@ logger = logging.getLogger(__name__)
 # Create a `login_request` view to handle sign in request
 @csrf_exempt
 def login_user(request):
-    # Get username and password from request.POST dictionary
+    # Get username and password from request.body dictionary
     data = json.loads(request.body)
     username = data['userName']
     password = data['password']
@@ -34,6 +34,8 @@ def login_user(request):
         # If user is valid, call login method to login current user
         login(request, user)
         data = {"userName": username, "status": "Authenticated"}
+    else:
+        data = {"userName": username, "status": "Not authenticated"}
     return JsonResponse(data)
 
 
